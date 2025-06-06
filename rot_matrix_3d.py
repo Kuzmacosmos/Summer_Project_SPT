@@ -21,3 +21,11 @@ def rot_matrix_3d(roll, pitch, yaw):
                     [0, 0, 1]])
 
     return np.matmul(np.matmul(R_z, R_y), R_x)
+
+def rot_matrix_3d_vect(vector_in, roll, pitch, yaw):
+    """ Computes the output vector based on the general 3D rotation matrix
+    from roll (x), pitch (y) and yaw (z) angles. Vector input in Cartesian,
+    angle inputs in degrees.
+    """
+
+    return np.matmul(rot_matrix_3d(roll, pitch, yaw), vector_in)
