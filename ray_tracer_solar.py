@@ -14,7 +14,6 @@ from refl_ray import refl_ray
 
 """ Adapted from Springer Handbook of Lasers and Optics (2nd edition), Section 2.4.1.
     https://doi.org/10.1007/978-3-642-19409-2
-    Code refactored by ChatGPT.
 """
 
 # Initial parameters
